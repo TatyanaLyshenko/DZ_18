@@ -1,0 +1,16 @@
+.works {
+    background-color: $bg-2;
+    &__blocks {
+        gap: 30px 25px;
+        padding-bottom: 170px; 
+    }
+    &__block {
+        flex-basis: 360px;
+        min-height: 358px;
+        background-color: $accent-color;  
+    }
+    
+    
+}
+
+

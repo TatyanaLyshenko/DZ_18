@@ -1,0 +1,22 @@
+.services .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border-radius: 2px;
+    filter: drop-shadow(0 0 18px rgba(20,20,21,0.2));
+    background-color: #ffffff;
+}
+.services {
+    &__title {
+        @include fonts($fssubtitle,$dark-color,1.5);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    &__block &__line {
+        width: 57px;
+        height: 3px;
+        background-color: #ff5c36;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @include fonts($fstext,$dark-color,1.5);
+        margin-bottom: 30px;
+    }
+}

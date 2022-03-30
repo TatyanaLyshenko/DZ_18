@@ -1,0 +1,50 @@
+@import './components/variables';
+@import './components/mixin';
+@import './blocks/header';
+@import './blocks/first-screen';
+@import './blocks/process';
+@import './blocks/works';
+@import './blocks/footer';
+@import './blocks/services';
+@import './blocks/team';
+@import './blocks/said';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.btn {
+    min-width: 228px;
+    height: 55px;
+    border-radius: 27px;
+    
+}
+
+.title {
+    padding-top: 130px;
+    padding-bottom: 110px; 
+    text-align: center
+}
+
+.title-main {
+    @include fonts($fstitle,$light-color,1);
+    font-weight: $fwtitle;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.title-accent {
+    color: $accent-color;
+}
+
+.title-text {
+    @include fonts($fstext,$light-color,1.5);
+    max-width: 700px;
+    margin: 0 auto;
+}

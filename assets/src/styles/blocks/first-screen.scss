@@ -1,6 +1,35 @@
 .first-screen {
     background-color: $bg;
     padding-top: 150px;
+    &__block {
+        min-height: 388px;
+        border-radius: 2px;
+        filter: drop-shadow(0 0 28.5px rgba(20,20,21,0.2));
+        background-color: #fff;
+        padding: 25px;
+    }
+    &__subtitle {
+        @include fonts(20px,$light-color,1.25);
+        text-transform: capitalize;
+        font-weight: $fwtitle;
+        text-align: center;
+    }
+    &__btn {
+        color: $whight-color;
+        filter: drop-shadow(1.91px 10.833px 10px rgba(20,20,21,0.08));
+        background-color: #ff5c36;
+        border: 1px solid rgba(1,2,2,0.07);
+    }
+    &__form {  
+        border: none;
+        border-bottom: 1px solid $light-color;
+        width: 100%;
+        margin-bottom: 25px;
+        &::placeholder {
+            @include fonts(15px,$light-color,1.6);
+        }
+    }
 
 }
+
 

@@ -8,6 +8,8 @@
 @import './blocks/services';
 @import './blocks/team';
 @import './blocks/said';
+@import './blocks/footer';
+
 
 
 * {
@@ -29,7 +31,6 @@ body {
 .title {
     padding-top: 130px;
     padding-bottom: 110px; 
-    text-align: center
 }
 
 .title-main {
@@ -45,6 +46,4 @@ body {
 
 .title-text {
     @include fonts($fstext,$light-color,1.5);
-    max-width: 700px;
-    margin: 0 auto;
 }

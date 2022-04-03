@@ -2,4 +2,50 @@
     &__slider {
         padding-bottom: 130px;
     }
+    // &__ellipse {
+    //     position: relative;
+    //     top: -50px;    
+    // }
+    &__text {
+        padding: 0 50px;
+        @include fonts(17px,#000,1.5);
+    }
 }
+
+  
+  .said .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #e0e0e0;
+    height: 7px;
+    width: 19px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .said .carousel-dark .carousel-indicators .active {
+    background-color: #ff6e47;
+  }
+  
+  .said .carousel-indicators {
+    bottom: -60px;
+  }
+  
+  .said .carousel-control-prev-icon {
+    background-image: url(/assets/src/image/prev.png);
+  }
+  
+  .said .carousel-control-next-icon {
+    background-image: url(/assets/src/image/next.png);
+  }
+
+
+.said .carousel-control-prev,
+.said .carousel-control-next {
+  opacity: 1;
+  width: auto;
+}
+
+
+ 
+ 
+
+  

@@ -4,20 +4,59 @@
         padding-bottom: 150px;
     }
     &__box {
-        flex-basis: 360px;
-        height: 445px;
+        max-width: 360px;
+        min-height: 445px;
         filter: drop-shadow(0 0 1px rgba(20,20,21,0.6));
         background-color: $accent-color;
+        position: relative;
+    }
+
+    &__box-active {
+        max-width: 360px;
+        height: 445px;
+        filter: drop-shadow(0 0 24.5px rgba(20,20,21,0.11));
+        background-color: #fff3f0;
+        padding: 170px 100px 50px;
+        text-align: center;
+
     }
     &__content {
         width: 262px;
         height: 95px;
+        padding: 20px 0;
         border-radius: 2px;
         filter: drop-shadow(1.042px 5.909px 8px rgba(20,20,21,0.08));
         background-color: $whight-color;
         text-align: center;
-        display: block;
-        margin: 0 auto;
-        margin-top: 370px;
+        position: absolute;
+        top: 370px;
+        left: 50%;
+        transform: translateX(-50%);
     }
+    &__title {
+        @include fonts($fssubtitle,$dark-color,1);
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    &__text {
+        @include fonts($fstext,$light-color,2);
+        font-weight: 300;
+    }
+    &__content-active {
+        margin-top: 80px;
+    }
+    &__text-active {
+        @include fonts($fstext,$accent-color,2);
+        font-weight: 300;
+    }
+    &__indicator {
+        @include fonts(11px,$dark-color,1.8);
+    }
+    & .progress {
+        height: 4px;
+      }
+      
+    & .progress-bar {
+        background-color: #ff5c36;
+      }
 }

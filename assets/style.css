@@ -253,6 +253,10 @@
   border: none;
 }
 
+.said .carousel-inner {
+  overflow: inherit;
+}
+
 .said .carousel-dark .carousel-indicators .active {
   background-color: #ff6e47;
 }
@@ -263,17 +267,31 @@
 
 .said .carousel-control-prev-icon {
   background-image: url(./src/image/prev.png);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
 }
 
 .said .carousel-control-next-icon {
   background-image: url(./src/image/next.png);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
 }
 
 .said .carousel-control-prev,
 .said .carousel-control-next {
   opacity: 1;
   width: auto;
+  top: inherit;
+  bottom: inherit;
+  margin-bottom: -150px;
+  margin-top: -150px;
+  margin-right: 20%;
+  margin-left: 20%;
 }
+
+
 
 .footer {
   background-color: #f7f7f7;
